@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.booksky-header {
+    background-color: crimson;
+    padding: 10px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.booksky-header h1{
+    margin: 0;
+}
+
+.container {
+    padding: 10px;
+}
+
+.book-container {
+    padding: 15px;
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin: 30px;
+    border-radius: 10px;
+    width: 30%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.book-container h2 {
+    color: darkgoldenrod;
+ 
+}
+
+.book-container button {
+    background-color: darkred;
+    width: 50%;
+    height: 50px;
+    border-radius: 10px;
+    border-color: aqua;
+    font-size: 25px;
+
+}
+
+#add-popup-button {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: darkgreen;
+    font-weight: bolder;
+    color: black;
+    font-size: 40px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-color: brown;
+    z-index: 10;
+}
+
+.popup-overlay {
+    background-color: black;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.popup-box {
+    margin-left: 30%;
+    background-color: darkviolet;
+    width: 50%;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    display: none;
+}
+
+.popup-box h2 {
+    font-size: 50px;
+    color: black;
+
+}
+
+.popup-box input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border-bottom: solid black 3px;
+
+}
+
+.popup-box textarea {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    border: solid black 3px;
+
+}
+
+.popup-box input::placeholder {
+    color:
+        black;
+}
+
+.popup-box textarea::placeholder {
+    color: black;
+}
+
+.popup-box button {
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: aqua;
+    border-color: rgb(67, 6, 209);
+    font-size: 20px;
+
+
+}
+
+.popup-box input:focus {
+    outline: none;
+}
+
+.popup-box textarea:focus {
+    outline: none;
+}
+
+/* 📱 Mobile */
+@media screen and (max-width: 600px) {
+
+    .book-container {
+        width: 90%;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .popup-box {
+        width: 90%;
+        margin-left: 5%;
+        padding: 20px;
+    }
+
+    .popup-box h2 {
+        font-size: 35px;
+    }
+}
+
+
+/* 📱 Tablet */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    .book-container {
+        width: 42%;
+        margin: 15px 3%;
+    }
+}
+
+
+/* 💻 Laptop */
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+
+    .book-container {
+        width: 28%;
+        margin: 15px 2%;
+    }
+}
+
+
+/* 🖥️ Large Laptop / Desktop */
+@media screen and (min-width: 1201px) {
+
+    .book-container {
+        width: 22%;
+        margin: 15px 1%;
+    }
+}
